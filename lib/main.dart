@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 import 'package:news_app/cubit/appcubit.dart';
 import 'package:news_app/cubit/appstate.dart';
 import 'package:news_app/cubit/cuibt.dart';
@@ -10,7 +10,7 @@ import 'package:news_app/cubit/cuibt.dart';
 import 'package:news_app/network/local/cache_helper.dart';
 import 'package:news_app/network/remote/dio_helper.dart';
 import 'package:news_app/newsApp/layout/newslayout.dart';
-import 'package:news_app/shopApp/onBoarding.dart';
+
 import 'package:news_app/style/themes.dart';
 import 'package:news_app/styles/bloc_observer.dart';
 
@@ -44,8 +44,8 @@ class MyApp extends StatelessWidget {
                   ? ThemeMode.dark
                   : ThemeMode.light,
               debugShowCheckedModeBanner: false,
-              home: OnBoarding()
-            // NewsLayout(),
+              home:  NewsLayout(),
+            
             );
           }),
     );
